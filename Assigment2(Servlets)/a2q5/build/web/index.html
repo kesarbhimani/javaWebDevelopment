@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor='#D5F5E3'>
+        <div style='background:#34495E' >
+            <h1 align='center' style='color:white'>Employ Registration form</h1>
+        </div>
+        <div align="center">
+            <form METHOD="POST" action="addServlet">
+                <table cellspacing="10" cellpadding="10">
+                    <tr>
+                        <td>Enter employ name : </td>
+                        <td><input type="text" name="txtName" /></td>
+                    </tr>   
+                    <tr>
+                        <td>Enter email:</td>
+                        <td><input type="text" name="txtEmail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Select gender:</td>
+                        <td>
+                            <input type="radio" name="rdGender" value="male" />Male<br>
+                            <input type="radio" name="rdGender" value="female"/>Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select department: </td>
+                        <td>
+                            <select name="ddlDept" style="width:150px">
+                                <option value="1">Sales</option>
+                                <option value="2">Finance</option>
+                                <option value="3">Manufacturing</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Salary: </td>
+                        <td><input type="text" name=txtSalary /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="insert" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+
+
